@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Sensai - AI Career Coach",
+  title: "Sensai-AI Career Coach",
   description: "",
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           {/* Header */}
-          <Header/>
+          <Header/> 
           <main className="min-h-screen">{children}</main>
           {/* Footer */}
           <footer className="bg-muted/50 py-12">
