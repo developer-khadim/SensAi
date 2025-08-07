@@ -11,7 +11,7 @@ import {
   StarsIcon,
 } from "lucide-react";
 import Link from "next/link";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -87,9 +87,12 @@ export default function Header() {
           </SignedIn>
 
           <SignedOut>
-            <SignInButton>
+            <Link href="/auth/sign-in">
               <Button variant="outline">Sign In</Button>
-            </SignInButton>
+            </Link>
+            <Link href="/auth/sign-up">
+              <Button variant="outline">Sign Up</Button>
+            </Link>
           </SignedOut>
 
           <SignedIn>

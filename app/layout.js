@@ -15,7 +15,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider 
+    >
     <html lang="en" suppressHydrationWarning >
       <body
         className={`${inter.className}`}
