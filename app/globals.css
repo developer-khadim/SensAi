@@ -121,6 +121,7 @@ body {
   pointer-events: none;
   z-index: -1;
 }
+/* Background */
 
 .grid-background::before {
   content: "";
